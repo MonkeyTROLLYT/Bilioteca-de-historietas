@@ -38,9 +38,11 @@ Aplicación de escritorio desarrollada en **C#** y **.NET 8.0** con **Avalonia U
 
 ```text
 BibliotecaHistorieta/
+├── bin/Debug/net8.0
+|    └── Biblioteca.db
 ├── Models/
 │   └── Comics.cs
-├── Data/
+ Data/
 │   └── ComicsDAO.cs
 ├── Services/
 │   └── ComicsService.cs
