@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:models="clr-namespace:BibliotecaHistorieta.Models"
+        x:Class="BibliotecaHistorieta.Listar"
+        Title="Biblioteca de Historietas"
+        Width="800" Height="500">
+    <Grid Margin="16" RowDefinitions="Auto,*">
+        <!-- Encabezado / categorías de columnas -->
+        <Border Grid.Row="0" Padding="10,6" Margin="0,0,0,6">
+            <StackPanel Orientation="Horizontal" Spacing="20">
+                <TextBlock Text="ID" FontWeight="Bold" Width="50" />
+                <TextBlock Text="Nombre" FontWeight="Bold" Width="220" />
+                <TextBlock Text="Autor" FontWeight="Bold" Width="200" />
+                <TextBlock Text="Año" FontWeight="Bold" Width="80" />
+            </StackPanel>
+        </Border>
+
+        <!-- Registros -->
+        <ListBox Grid.Row="1" Name="ListaComics">
+            <ListBox.ItemTemplate>
+                <DataTemplate x:DataType="models:Comics">
+                    <StackPanel Orientation="Horizontal" Spacing="20">
+                        <TextBlock Text="{Binding Id}" FontWeight="Bold" Width="50" />
+                        <TextBlock Text="{Binding Nombre}" Width="220" />
+                        <TextBlock Text="{Binding Autor}" Width="200" />
+                        <TextBlock Text="{Binding Anio}" Width="80" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

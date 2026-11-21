@@ -1,0 +1,14 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BibliotecaHistorieta.Eliminar"
+        Title="Eliminar Cómic"
+        Width="400" Height="220">
+    <StackPanel Margin="20" Spacing="12">
+        <TextBlock Text="ID del cómic a eliminar:" FontWeight="Bold" />
+        <TextBox Name="TxtId" Watermark="Ej. 1" />
+
+        <Button Name="BtnEliminar" Content="Eliminar" Click="OnEliminarClick" HorizontalAlignment="Stretch" />
+
+        <TextBlock Name="LblMensaje" TextWrapping="Wrap" />
+    </StackPanel>
+</Window>

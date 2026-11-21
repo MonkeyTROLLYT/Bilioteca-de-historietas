@@ -1,0 +1,70 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BibliotecaHistorieta.Agregar"
+        Title="Biblioteca de Historietas"
+        Width="800" Height="500">
+    <ScrollViewer Padding="24">
+        <Border MaxWidth="480"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Padding="24"
+                CornerRadius="10"
+                BorderThickness="1"
+                BorderBrush="#33888888">
+
+            <StackPanel Spacing="16">
+                <!-- Encabezado -->
+                <StackPanel Spacing="4">
+                    <TextBlock Text="Registrar Nuevo Cómic"
+                               FontSize="20"
+                               FontWeight="Bold" />
+                    <TextBlock Text="Completa los datos para guardarlo en la biblioteca."
+                               FontSize="13"
+                               Opacity="0.75" />
+                </StackPanel>
+
+                <!-- Campo Nombre -->
+                <StackPanel Spacing="6">
+                    <TextBlock Text="Nombre del cómic *" FontWeight="SemiBold" />
+                    <TextBox Name="TxtNombre"
+                             Watermark="Ej. Batman: Año Uno" />
+                </StackPanel>
+
+                <!-- Campo Autor -->
+                <StackPanel Spacing="6">
+                    <TextBlock Text="Autor *" FontWeight="SemiBold" />
+                    <TextBox Name="TxtAutor"
+                             Watermark="Ej. Frank Miller" />
+                </StackPanel>
+
+                <!-- Campo Año (solo números) -->
+                <StackPanel Spacing="6">
+                    <TextBlock Text="Año de publicación *" FontWeight="SemiBold" />
+                    <TextBox Name="TxtAnio"
+                             Watermark="Ej. 1987"
+                             MaxLength="4" />
+                </StackPanel>
+
+                <!-- Mensaje de estado / validación -->
+                <TextBlock Name="LblMensaje" TextWrapping="Wrap" />
+
+                <!-- Botones de acción -->
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            Spacing="10"
+                            Margin="0,8,0,0">
+                    <Button Name="BtnLimpiar"
+                            Content="Limpiar"
+                            Padding="16,8"
+                            Click="OnLimpiarClick" />
+
+                    <Button Name="BtnGuardar"
+                            Content="Guardar Cómic"
+                            Padding="18,8"
+                            FontWeight="SemiBold"
+                            Click="OnGuardarClick" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </ScrollViewer>
+</Window>

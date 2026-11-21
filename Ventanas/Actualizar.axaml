@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BibliotecaHistorieta.Actualizar"
+        Title="Actualizar Cómic"
+        Width="420" Height="280">
+    <StackPanel Margin="20" Spacing="12">
+        <TextBlock Text="ID del cómic:" FontWeight="Bold" />
+        <TextBox Name="TxtId" Watermark="Ej. 1" />
+
+        <TextBlock Text="Nuevo nombre:" FontWeight="Bold" />
+        <TextBox Name="TxtNombre" Watermark="Escribe el nuevo nombre" />
+
+        <Button Name="BtnActualizar" Content="Actualizar" Click="OnActualizarClick" HorizontalAlignment="Stretch" />
+
+        <TextBlock Name="LblMensaje" TextWrapping="Wrap" />
+    </StackPanel>
+</Window>

@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="BibliotecaHistorieta.MainWindow"
+        Title="Biblioteca de Historietas"
+        Width="800" Height="500">
+    <Grid RowDefinitions="*,Auto">
+        <!-- Bloque de título + subtítulo juntos -->
+        <StackPanel Grid.Row="0"
+                    Spacing="8"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Margin="24,0">
+            <TextBlock Text="Bienvenido a la Biblioteca de Comics"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center" />
+            <TextBlock Text="Este programa permite realizar el CRUD completo de una biblioteca"
+                       FontSize="16"
+                       Opacity="0.75"
+                       TextWrapping="Wrap"
+                       HorizontalAlignment="Center"
+                       TextAlignment="Center" />
+        </StackPanel>
+
+        <!-- Sección de 4 botones -->
+        <Border Grid.Row="1"
+                Padding="16"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal"
+                        Spacing="12"
+                        HorizontalAlignment="Center">
+                <Button Content="Agregar" Padding="18,10" Click="Agregar"/>
+                <Button Content="Listar" Padding="18,10" Click="Listar"/>
+                <Button Content="Actualizar" Padding="18,10" Click="Actualizar"/>
+                <Button Content="Eliminar" Padding="18,10" Click="Eliminar"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
