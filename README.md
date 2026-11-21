@@ -262,7 +262,8 @@ A continuación se presentan las capturas correspondientes a las pruebas funcion
    *Explicación:* Al enviar un `ID` existente y un nombre válido, el registro se actualiza en la base de datos y se muestra el mensaje de actualización exitosa.
 
 8. **Eliminación por ID (`Eliminar`):** `![Eliminación de cómic](capturas/08_eliminar_comic.png)`  
-   *Explicación:* Al ingresar un `ID` válido y existente y confirmar la eliminación, el registro se borra de la base de datos, se notifica el resultado y deja de aparecer en el listado.
+   *Explicación:* Al ingresar un `ID` válido y existente y confirmar la eliminación, el registro se borra de la base de datos, se muestra el mensaje de confirmación y deja de aparecer en el listado.
+   
 ## 6.9. Problemas encontrados y soluciones
 
 * **Coincidencia de `x:Class`, `namespace` y `InitializeComponent` en Avalonia**: Al mover o crear ventanas en carpetas, un desajuste entre `x:Class` en el `.axaml` y el `namespace` / nombre de clase en el `.axaml.cs` impedía generar `InitializeComponent` y los nombres de controles. Se resolvió alineando exactamente `x:Class`, `namespace`, clase parcial y directivas `using`.
