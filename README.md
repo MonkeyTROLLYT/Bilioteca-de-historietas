@@ -1,6 +1,6 @@
 # BibliotecaHistorieta
 
-Aplicación de escritorio desarrollada en **C#** y **.NET 8.0** con **Avalonia UI** y persistencia local en **SQLite** mediante **ADO.NET** (`Microsoft.Data.Sqlite`), organizada bajo una arquitectura por capas (**Vista / Ventanas -> Servicio -> Modelo ->DAO **).
+Aplicación de escritorio desarrollada en **C#** y **.NET 8.0** con **Avalonia UI** y persistencia local en **SQLite** mediante **ADO.NET** (`Microsoft.Data.Sqlite`), organizada bajo una arquitectura por capas (Vista / Ventanas -> Servicio -> Modelo ->DAO ).
 
 ---
 
