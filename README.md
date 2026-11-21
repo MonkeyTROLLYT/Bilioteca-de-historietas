@@ -240,29 +240,37 @@ Al ejecutar `dotnet run`, el proyecto compila y abre la ventana principal de la 
 
 A continuación se presentan las capturas correspondientes a las pruebas funcionales de la aplicación:
 
-1. **Menú principal y ventanas emergentes:** `![Menú principal](Capturas/Captura%20de%20pantalla%202026-11-21%20104616.png)`  
-   *Explicación:* Muestra la ventana de entrada con las cuatro opciones principales del sistema; al seleccionar una opción, se abre encima una ventana emergente correspondiente a dicha operación.
+1. **Menú principal y ventanas emergentes:** 
+   <img width="1366" height="768" alt="Captura de pantalla 2026-11-21 104616" src="https://github.com/user-attachments/assets/6c9e5269-c21d-4e0e-80b8-f2a9eb14b534" />
+*Explicación:* Muestra la ventana de entrada con las cuatro opciones principales del sistema; al seleccionar una opción, se abre encima una ventana emergente correspondiente a dicha operación.
 
-2. **Formulario de registro (`Agregar`):** `![Formulario de registro](capturas/02_formulario_agregar.png)`  
-   *Explicación:* Presenta la ventana emergente con los campos para ingresar los datos del cómic (nombre, autor y año) y ejecutar el registro.
+2. **Formulario de registro (`Agregar`):** 
+   <img width="1366" height="768" alt="Captura de pantalla 2026-11-21 104711" src="https://github.com/user-attachments/assets/ea4fd90d-ea4e-4712-9a96-1a342845760b" />
+*Explicación:* Presenta la ventana emergente con los campos para ingresar los datos del cómic (nombre, autor y año) y ejecutar el registro.
 
-3. **Validación de campos vacíos o inválidos al registrar:** `![Error de validación al registrar](capturas/03_error_campos_vacios.png)`  
-   *Explicación:* Si se intenta guardar dejando campos requeridos vacíos o con datos no válidos, el sistema bloquea el guardado y muestra el mensaje de advertencia o error en la interfaz.
+3. **Validación de campos vacíos o inválidos al registrar:**  
+   <img width="1366" height="768" alt="Captura de pantalla 2026-11-21 104823" src="https://github.com/user-attachments/assets/d2aff042-4a7d-4990-a324-32cdfab9f2ea" />
+*Explicación:* Si se intenta guardar dejando campos requeridos vacíos o con datos no válidos, el sistema bloquea el guardado y muestra el mensaje de advertencia o error en la interfaz.
 
 4. **Registro exitoso:** `![Registro exitoso](capturas/04_registro_exitoso.png)`  
-   *Explicación:* Una vez ingresados datos válidos que superan la validación, el mensaje cambia a confirmación de registro exitoso, se guarda en SQLite y se limpian los campos del formulario.
+   <img width="1366" height="767" alt="Captura de pantalla 2026-11-21 104845" src="https://github.com/user-attachments/assets/f7ed0a28-4e4f-411c-a3bf-59827c74a70e" />
+*Explicación:* Una vez ingresados datos válidos que superan la validación, el mensaje cambia a confirmación de registro exitoso, se guarda en SQLite y se limpian los campos del formulario.
 
 5. **Listado automático de cómics (`Listar`):** `![Listado de cómics](capturas/05_listar_comics.png)`  
-   *Explicación:* Al elegir la opción de listar, se abre una ventana emergente encima y se cargan automáticamente todos los cómics registrados hasta el momento en la base de datos.
+   <img width="1366" height="768" alt="Captura de pantalla 2026-11-21 104902" src="https://github.com/user-attachments/assets/c027eb83-e5bf-431d-af43-d76b191c0633" />
+*Explicación:* Al elegir la opción de listar, se abre una ventana emergente encima y se cargan automáticamente todos los cómics registrados hasta el momento en la base de datos.
 
 6. **Formulario de actualización (`Actualizar`):** `![Formulario de actualización](capturas/06_formulario_actualizar.png)`  
-   *Explicación:* Muestra la ventana para modificar el nombre de un cómic indicando su `ID` y el nuevo `Nombre`.
+   <img width="1366" height="756" alt="Captura de pantalla 2026-11-21 104944" src="https://github.com/user-attachments/assets/5318b6a9-43bd-4090-8feb-9f98053b58e0" />
+*Explicación:* Muestra la ventana para modificar el nombre de un cómic indicando su `ID` y el nuevo `Nombre`.
 
 7. **Actualización exitosa:** `![Actualización exitosa](capturas/07_actualizacion_exitosa.png)`  
-   *Explicación:* Al enviar un `ID` existente y un nombre válido, el registro se actualiza en la base de datos y se muestra el mensaje de actualización exitosa.
+   <img width="1366" height="760" alt="Captura de pantalla 2026-11-21 105020" src="https://github.com/user-attachments/assets/10df0504-2b68-4993-9aaa-9d8756e2f8de" />
+*Explicación:* Al enviar un `ID` existente y un nombre válido, el registro se actualiza en la base de datos y se muestra el mensaje de actualización exitosa.
 
 8. **Eliminación por ID (`Eliminar`):** `![Eliminación de cómic](capturas/08_eliminar_comic.png)`  
-   *Explicación:* Al ingresar un `ID` válido y existente y confirmar la eliminación, el registro se borra de la base de datos, se muestra el mensaje de confirmación y deja de aparecer en el listado.
+   <img width="1366" height="768" alt="Captura de pantalla 2026-11-21 105049" src="https://github.com/user-attachments/assets/09611f21-1e8c-4a87-adcc-fbd2988266d3" />
+*Explicación:* Al ingresar un `ID` válido y existente y confirmar la eliminación, el registro se borra de la base de datos, se muestra el mensaje de confirmación y deja de aparecer en el listado.
    
 ## 6.9. Problemas encontrados y soluciones
 
