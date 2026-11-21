@@ -238,17 +238,31 @@ Al ejecutar `dotnet run`, el proyecto compila y abre la ventana principal de la 
 
 ## 6.8. Evidencias de funcionamiento
 
-> Reemplaza las rutas de imagen por tus capturas reales antes de subir el repositorio.
+A continuación se presentan las capturas correspondientes a las pruebas funcionales de la aplicación:
 
-* **Registro de cómic**: ![Registro de cómic](capturas/agregar.png)
-  * **Explicación**: Se ingresan los datos de un cómic y se presiona guardar; se muestra el mensaje de confirmación y el registro queda almacenado.
-* **Listado automático**: ![Listado de cómics](capturas/listar.png)
-  * **Explicación**: Al abrir la vista de listar, se cargan automáticamente los registros desde SQLite y se visualizan con su encabezado.
-* **Actualización por ID**: ![Actualizar nombre](capturas/actualizar.png)
-  * **Explicación**: Se ingresa un ID existente y el nuevo nombre; se actualiza el registro y se muestra el mensaje correspondiente (o aviso si el ID no existe).
-* **Eliminación por ID**: ![Eliminar cómic](capturas/eliminar.png)
-  * **Explicación**: Se ingresa un ID para eliminar y se confirma la eliminación o el mensaje de registro no encontrado.
+1. **Menú principal y ventanas emergentes:** `![Menú principal](capturas/Captura de pantalla 2026-11-21 104616.png)`  
+   *Explicación:* Muestra la ventana de entrada con las cuatro opciones principales del sistema; al seleccionar una opción, se abre encima una ventana emergente correspondiente a dicha operación.
 
+2. **Formulario de registro (`Agregar`):** `![Formulario de registro](capturas/02_formulario_agregar.png)`  
+   *Explicación:* Presenta la ventana emergente con los campos para ingresar los datos del cómic (nombre, autor y año) y ejecutar el registro.
+
+3. **Validación de campos vacíos o inválidos al registrar:** `![Error de validación al registrar](capturas/03_error_campos_vacios.png)`  
+   *Explicación:* Si se intenta guardar dejando campos requeridos vacíos o con datos no válidos, el sistema bloquea el guardado y muestra el mensaje de advertencia o error en la interfaz.
+
+4. **Registro exitoso:** `![Registro exitoso](capturas/04_registro_exitoso.png)`  
+   *Explicación:* Una vez ingresados datos válidos que superan la validación, el mensaje cambia a confirmación de registro exitoso, se guarda en SQLite y se limpian los campos del formulario.
+
+5. **Listado automático de cómics (`Listar`):** `![Listado de cómics](capturas/05_listar_comics.png)`  
+   *Explicación:* Al elegir la opción de listar, se abre una ventana emergente encima y se cargan automáticamente todos los cómics registrados hasta el momento en la base de datos.
+
+6. **Formulario de actualización (`Actualizar`):** `![Formulario de actualización](capturas/06_formulario_actualizar.png)`  
+   *Explicación:* Muestra la ventana para modificar el nombre de un cómic indicando su `ID` y el nuevo `Nombre`.
+
+7. **Actualización exitosa:** `![Actualización exitosa](capturas/07_actualizacion_exitosa.png)`  
+   *Explicación:* Al enviar un `ID` existente y un nombre válido, el registro se actualiza en la base de datos y se muestra el mensaje de actualización exitosa.
+
+8. **Eliminación por ID (`Eliminar`):** `![Eliminación de cómic](capturas/08_eliminar_comic.png)`  
+   *Explicación:* Al ingresar un `ID` válido y existente y confirmar la eliminación, el registro se borra de la base de datos, se notifica el resultado y deja de aparecer en el listado.
 ## 6.9. Problemas encontrados y soluciones
 
 * **Coincidencia de `x:Class`, `namespace` y `InitializeComponent` en Avalonia**: Al mover o crear ventanas en carpetas, un desajuste entre `x:Class` en el `.axaml` y el `namespace` / nombre de clase en el `.axaml.cs` impedía generar `InitializeComponent` y los nombres de controles. Se resolvió alineando exactamente `x:Class`, `namespace`, clase parcial y directivas `using`.
