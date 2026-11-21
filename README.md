@@ -207,7 +207,11 @@ classDiagram
    dotnet restore
    ```
 
-4. **Configuración adicional**: No se requiere instalar un servidor de base de datos externo ni configurar credenciales manualmente, ya que SQLite se maneja mediante archivo local.
+4. **Configuración adicional:** No se requiere instalar un servidor de base de datos externo ni configurar credenciales manualmente, ya que SQLite se maneja mediante archivo local (`biblioteca.db`) que se crea automáticamente al iniciar la aplicación.
+
+5. **Compilar y ejecutar el programa:** Desde la carpeta donde se encuentra `BibliotecaHistorieta.csproj`, ejecuta:
+   ```bash
+   dotnet run
 
 ## 6.6. Ejecución del programa
 
