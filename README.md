@@ -240,7 +240,7 @@ Al ejecutar `dotnet run`, el proyecto compila y abre la ventana principal de la 
 
 A continuación se presentan las capturas correspondientes a las pruebas funcionales de la aplicación:
 
-1. **Menú principal y ventanas emergentes:** `![Menú principal](Capturas/Captura de pantalla 2026-11-21 104616.png)`  
+1. **Menú principal y ventanas emergentes:** `![Menú principal](![Captura](Capturas/Captura%20de%20pantalla%202026-11-21%20104616.png))`  
    *Explicación:* Muestra la ventana de entrada con las cuatro opciones principales del sistema; al seleccionar una opción, se abre encima una ventana emergente correspondiente a dicha operación.
 
 2. **Formulario de registro (`Agregar`):** `![Formulario de registro](capturas/02_formulario_agregar.png)`  
